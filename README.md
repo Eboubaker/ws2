@@ -103,11 +103,12 @@ dispenser500.set_next(dispenser200)
 # give it the head of the chain(largest first)
 atm = ATM.get_instance()
 atm.set_dispenser_chain(dispenser2000) 
-```
 
 txn1 = atm.withdraw(4700)
 if txn1:
     print(txn1.get_receipt())
+```
+
 ```
 The output will be:
 ```Transaction Receipt
